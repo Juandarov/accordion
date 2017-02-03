@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 body{
     width: 70%;
@@ -16,11 +17,13 @@ header{
 
 
 h1 {
-    color: #82CC29;
-    padding: 1em;
+    font-family: "Ubuntu";
+    font-weight: bold;
     border-bottom: 1px solid #82CC29;
-    font-size: 36px;
+    color: #82CC29;
+    line-height: 187% !important;
 }
+
 
 p {
     margin-bottom: 1em;
@@ -39,7 +42,7 @@ aside ul {
 
 ul li {
     width: 3em;
-    font-size: 4em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 1em;
     background:#82CC29;
@@ -66,9 +69,24 @@ main {
 section i {
     float: left;
 }
+
+ul li a i {
+    color: white;
+}
+
 h2 {
     border-bottom: 1px solid lightgrey;
-    }
+    display: block;
+    cursor: pointer;
+    min-height: 3em;
+    line-height: 3em;
+    padding: 0 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: rgb(91, 91, 91);
+    font-weight: normal;
+}
 
 section article {
     display: inline-block;
@@ -79,8 +97,10 @@ section article {
 }
 
 main section {
-    box-shadow: 0 0 5px lightgrey;
-
+    border: solid 0.25px lightgrey;
+    margin: 20px 0;
+    box-shadow: 1px 2px 8px 0px;
+    margin-left: 5em;
 }
 
 button {
@@ -91,8 +111,4 @@ button {
     border: none;
     text-align: center;
     text-transform: uppercase;
-}
-
-.cache { // Pour que ça déroule
-    display: none;
 }
